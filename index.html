@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Pallette</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script async src="index.js"></script>
+  </head>
+  <body>
+    <!-- color picker title, selection, and values -->
+    <section
+      class="container-fluid d-flex justify-content-center"
+      id="baseColor"
+    >
+      <div class="row py-4 text-center" id="colorPicker">
+        <h1>Color Picker</h1>
+        <div class="d-flex align-items-center justify-content-center">
+          <label for="colorSelector" class="mx-2">
+            <strong>Choose a color:</strong></label
+          >
+          <input type="color" value="#000000" id="colorSelector" />
+        </div>
+        <div class="mt-2">
+          <span id="baseHex" class="fst-italic">#000000</span>
+          <span>|</span>
+          <span class="fst-italic">
+            (
+            <span id="baseR">0</span>, <span id="baseG">0</span>,
+            <span id="baseB">0</span>
+            )
+          </span>
+          <span>|</span>
+          <span class="fst-italic"
+            >( <span id="baseH">0</span>, <span id="baseS">0</span>%,
+            <span id="baseL">0</span>%)</span
+          >
+        </div>
+      </div>
+    </section>
+    <!-- each of the different color partners, values, and buttons within -->
+    <section class="container-fluid d-flex p-0 justify-content-center">
+      <div class="row d-flex justify-content-center" id="colorBoxes">
+        <div
+          class="col-sm-4 col-md-4 border border-dark d-flex flex-column align-items-center mt-2"
+          id="colorComp"
+        >
+          <h4 class="mb-auto">Complementary Color</h4>
+          <ul class="mb-auto mx-auto p-0" id="compUL">
+            <li class="list-group-item">HEX: <span id="hexComp">-</span></li>
+            <li class="list-group-item">RGB: <span id="rgbComp">-</span></li>
+            <li class="list-group-item">HSL: <span id="hslComp">-</span></li>
+          </ul>
+          <button class="mb-2 btn btn-outline-dark fw-bold" id="copyColorComp">
+            Copy HEX
+          </button>
+        </div>
+        <div
+          class="col-sm-4 col-md-4 border border-dark d-flex flex-column align-items-center mt-2"
+          id="colorAnaOne"
+        >
+          <h4 class="mb-auto">Analogous Color Left</h4>
+          <ul class="mb-auto mx-auto p-0" id="anaOneUL">
+            <li class="list-group-item">HEX: <span id="hexAnaOne">-</span></li>
+            <li class="list-group-item">RGB: <span id="rgbAnaOne">-</span></li>
+            <li class="list-group-item">HSL: <span id="hslAnaOne">-</span></li>
+          </ul>
+          <button
+            class="mb-2 btn btn-outline-dark fw-bold"
+            id="copyColorAnaOne"
+          >
+            Copy HEX
+          </button>
+        </div>
+        <div
+          class="col-sm-4 col-md-4 border border-dark d-flex flex-column align-items-center mt-2"
+          id="colorAnaTwo"
+        >
+          <h4 class="mb-auto">Analogous Color Right</h4>
+          <ul class="mb-auto mx-auto p-0" id="anaTwoUL">
+            <li class="list-group-item">HEX: <span id="hexAnaTwo">-</span></li>
+            <li class="list-group-item">RGB: <span id="rgbAnaTwo">-</span></li>
+            <li class="list-group-item">HSL: <span id="hslAnaTwo">-</span></li>
+          </ul>
+          <button
+            class="mb-2 btn btn-outline-dark fw-bold"
+            id="copyColorAnaTwo"
+          >
+            Copy HEX
+          </button>
+        </div>
+        <div
+          class="col-sm-4 col-md-4 border border-dark d-flex flex-column align-items-center mt-2"
+          id="colorTriOne"
+        >
+          <h4 class="mb-auto">Triadic Color Left</h4>
+          <ul class="mb-auto mx-auto p-0" id="triOneUL">
+            <li class="list-group-item">HEX: <span id="hexTriOne">-</span></li>
+            <li class="list-group-item">RGB: <span id="rgbTriOne">-</span></li>
+            <li class="list-group-item">HSL: <span id="hslTriOne">-</span></li>
+          </ul>
+          <button
+            class="mb-2 btn btn-outline-dark fw-bold"
+            id="copyColorTriOne"
+          >
+            Copy HEX
+          </button>
+        </div>
+        <div
+          class="col-sm-4 col-md-4 border border-dark d-flex flex-column align-items-center mt-2"
+          id="colorTriTwo"
+        >
+          <h4 class="mb-auto">Triadic Color Right</h4>
+          <ul class="mb-auto mx-auto p-0" id="triTwoUL">
+            <li class="list-group-item">HEX: <span id="hexTriTwo">-</span></li>
+            <li class="list-group-item">RGB: <span id="rgbTriTwo">-</span></li>
+            <li class="list-group-item">HSL: <span id="hslTriTwo">-</span></li>
+          </ul>
+          <button
+            class="mb-2 btn btn-outline-dark fw-bold"
+            id="copyColorTriTwo"
+          >
+            Copy HEX
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

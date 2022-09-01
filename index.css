@@ -1,0 +1,9 @@
+/* simple CSS to cover bootstrap gaps */
+#colorBoxes {
+  height: 700px;
+}
+
+h4 {
+  text-align: center;
+  padding: 10px;
+}
