@@ -1,6 +1,6 @@
 # Welcome to the Color Pallete
 
-Key Technologies: Javascript | CSS
+Key Technologies: Javascript | Bootstrap
 
 This project will run a page where you can choose a color using the input("color") element; then the following will happen:
 
